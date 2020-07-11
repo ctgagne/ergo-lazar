@@ -73,7 +73,10 @@
           </ul>
         </div>
         <div class="image-box">
-          <img src="..\assets\photo-1587309492556-5960dcda7e17.jpg" alt="" />
+          <img
+            src="@/assets/photo-1587309492556-5960dcda7e17.jpg"
+            alt="Neurofeedback"
+          />
         </div>
       </div>
     </div>
