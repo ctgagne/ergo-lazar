@@ -1,32 +1,80 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <NavBar />
+    <transition name="view">
+      <router-view />
+    </transition>
+    <Footer />
   </div>
 </template>
 
+<script>
+import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
+export default {
+  components: {
+    NavBar,
+    Footer
+  }
+};
+</script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Merienda:wght@400;700&family=Passion+One:wght@400;700&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Oswald", sans-serif;
   text-align: center;
-  color: #2c3e50;
+  margin: auto 0;
+}
+
+:root {
+  --light-text: #f4f5f4;
+  --dark-text: #2d3032;
+  --light-background: #ebb66d;
+  --dark-background: #2d3032;
+  --primary-color: #c47910;
+  --component-color: #e2a68e;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--light-text);
+}
+
+.main {
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: var(--light-background);
+  color: var(--dark-text);
 }
 
 #nav {
-  padding: 30px;
+  margin-bottom: 5px;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+p {
+  color: var(--dark-text);
+}
+
+.view-enter-active,
+.view-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.view-enter-to,
+.view-leave {
+  transition-delay: 0.5s;
+}
+
+.view-enter,
+.view-leave-to {
+  opacity: 0;
 }
 </style>

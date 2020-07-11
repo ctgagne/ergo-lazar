@@ -11,13 +11,49 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: "/pädiatrie",
+    name: "Pädiatrie",
+    component: () => import("../views/Kinder.vue")
+  },
+  {
+    path: "/kontakt",
+    name: "Kontakt",
+    component: () => import("../views/Kontakt.vue")
+  },
+  {
+    path: "/impressum",
+    name: "Impressum",
+    component: () => import("../views/Impressum.vue")
+  },
+  {
+    path: "/team",
+    name: "Team",
+    component: () => import("../views/Team.vue")
+  },
+  {
+    path: "/gerontologie",
+    name: "Gerontologie",
+    component: () => import("../views/Gerontologie.vue")
+  },
+  {
+    path: "/neurofeedback",
+    name: "Neurofeedback",
+    component: () => import("../views/Neurofeedback.vue")
+  },
+  {
+    path: "/erwachsene",
+    name: "Erwachsene",
+    component: () => import("../views/Erwachsene.vue")
+  },
+  {
+    path: "/motorisch-funktionell",
+    name: "MotorischFunktionell",
+    component: () => import("../views/MotorischFunktionell.vue")
+  },
+  {
+    path: "/psychologie",
+    name: "Psychologie",
+    component: () => import("../views/Psychologie.vue")
   }
 ];
 
