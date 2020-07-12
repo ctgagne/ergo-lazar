@@ -77,10 +77,15 @@ export default {
   text-decoration: none;
 }
 
-.sub-menu .menu-items:hover {
+.sub-menu .menu-items a:hover {
+  color: var(--dark-text);
+  text-decoration: none;
+}
+
+/* .sub-menu .menu-items:hover {
   background-color: #88530a;
   opacity: 85%;
-}
+} */
 
 .fade-enter-active,
 .fade-leave-active {
@@ -89,6 +94,6 @@ export default {
 
 .fade-enter,
 .fade-leave-to {
-  opacity: 0.9;
+  opacity: 0;
 }
 </style>
