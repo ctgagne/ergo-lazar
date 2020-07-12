@@ -126,10 +126,13 @@ export default {
           link: "/pädiatrie"
         },
         {
-          title: "Gerontologie",
-          link: "/gerontologie"
+          title: "Geriatrie",
+          link: "/geriatrie"
         },
-
+        {
+          title: "Neurologie",
+          link: "/neurologie"
+        },
         {
           title: "Psychologie",
           link: "/psychologie"

@@ -4,30 +4,6 @@
       <h1>IHRE ERGO-PRAXIS</h1>
       <h2>Individuelle Therapie für maximale Erfolge</h2>
       <div class="card-grid">
-        <router-link class="service-card" to="/pädiatrie">
-          <div class="image-card">
-            <img src="@/assets/pexels-photo-4473993.jpeg" alt="Pädiatrie" />
-          </div>
-          <div class="image-text">
-            <h3>pädiatrie</h3>
-          </div>
-        </router-link>
-        <router-link class="service-card" to="/erwachsene">
-          <div class="image-card">
-            <img src="@/assets/pexels-photo-4506166.jpeg" alt="Erwachsene" />
-          </div>
-          <div class="image-text">
-            <h3>erwachsene</h3>
-          </div>
-        </router-link>
-        <router-link class="service-card" to="/gerontologie">
-          <div class="image-card">
-            <img src="@/assets/pexels-photo-339619.jpeg" alt="Gerontologie" />
-          </div>
-          <div class="image-text">
-            <h3>gerontologie</h3>
-          </div>
-        </router-link>
         <router-link class="service-card" to="/neurofeedback">
           <div class="image-card">
             <img
@@ -39,6 +15,31 @@
             <h3>neurofeedback</h3>
           </div>
         </router-link>
+        <router-link class="service-card" to="/pädiatrie">
+          <div class="image-card">
+            <img src="@/assets/pexels-photo-4473993.jpeg" alt="Pädiatrie" />
+          </div>
+          <div class="image-text">
+            <h3>pädiatrie</h3>
+          </div>
+        </router-link>
+        <router-link class="service-card" to="/gerontologie">
+          <div class="image-card">
+            <img src="@/assets/pexels-photo-339619.jpeg" alt="Gerontologie" />
+          </div>
+          <div class="image-text">
+            <h3>geriatrie</h3>
+          </div>
+        </router-link>
+        <router-link class="service-card" to="/neurologie">
+          <div class="image-card">
+            <img src="@/assets/pexels-photo-4506166.jpeg" alt="Neurologie" />
+          </div>
+          <div class="image-text">
+            <h3>neurologie</h3>
+          </div>
+        </router-link>
+
         <router-link class="service-card" to="/psychologie">
           <div class="image-card">
             <img

@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1>Gerontologie</h1>
+    <h1>Geriatrie</h1>
     <h2>Von wegen "altes Eisen"...</h2>
     <p>
       <strong>Jeder Mensch</strong> erlebt im Laufe des Alterns funktionelle

@@ -13,9 +13,6 @@
       <button class="lerntherapie-btn" @click="component = 'Lerntherapie'">
         <h3>Lerntherapie</h3>
       </button>
-      <button class="kurse-btn" @click="component = 'Kurse'">
-        <h3>Kurse</h3>
-      </button>
     </div>
 
     <transition name="fade" mode="out-in">
@@ -28,14 +25,12 @@
 import Handigkeit from "@/components/Handigkeit.vue";
 import Verhaltenstherapie from "@/components/Verhaltenstherapie.vue";
 import Lerntherapie from "@/components/Lerntherapie.vue";
-import Kurse from "@/components/Kurse.vue";
 export default {
   name: "KinderSlides",
   components: {
     Handigkeit,
     Verhaltenstherapie,
-    Lerntherapie,
-    Kurse
+    Lerntherapie
   },
   data() {
     return {
@@ -116,6 +111,7 @@ ul {
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
   margin-left: 4rem;
+  font-weight: 500;
 }
 
 .fade-enter-active,

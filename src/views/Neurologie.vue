@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1>Erwachsene</h1>
+    <h1>Neurologie</h1>
     <h2>Demnächst verfügbar</h2>
     <!-- 
     <p>

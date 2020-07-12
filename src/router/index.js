@@ -31,9 +31,9 @@ const routes = [
     component: () => import("../views/Team.vue")
   },
   {
-    path: "/gerontologie",
-    name: "Gerontologie",
-    component: () => import("../views/Gerontologie.vue")
+    path: "/geriatrie",
+    name: "Geriatrie",
+    component: () => import("../views/Geriatrie.vue")
   },
   {
     path: "/neurofeedback",
@@ -41,9 +41,9 @@ const routes = [
     component: () => import("../views/Neurofeedback.vue")
   },
   {
-    path: "/erwachsene",
-    name: "Erwachsene",
-    component: () => import("../views/Erwachsene.vue")
+    path: "/neurologie",
+    name: "Neurologie",
+    component: () => import("../views/Neurologie.vue")
   },
   {
     path: "/motorisch-funktionell",
