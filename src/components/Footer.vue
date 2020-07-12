@@ -60,10 +60,12 @@ export default {};
 .footer-container {
   margin: 2rem 1rem 0 1rem;
   color: var(--dark-text);
+  font-family: "Oswald", sans-serif;
 }
 .contact-info {
   display: flex;
   justify-content: center;
+  font-family: "Oswald", sans-serif;
 }
 
 svg {
@@ -81,6 +83,10 @@ svg:hover {
   min-width: 25ch;
 }
 
+#contact-card p {
+  font-family: "Oswald", sans-serif;
+}
+
 .location,
 .hours {
   border-left: 1px solid var(--dark-background);
@@ -92,10 +98,12 @@ svg:hover {
   flex-wrap: wrap;
   font-size: 0.9rem;
   justify-content: space-between;
+  font-family: "Oswald", sans-serif;
 }
 
 .bottom-footer p {
   margin: 1rem 0;
+  font-family: "Oswald", sans-serif;
 }
 
 .link {

@@ -11,7 +11,11 @@
     <transition name="fade">
       <div class="sub-menu" v-if="isOpen">
         <div v-for="(item, i) in items" :key="i" class="menu-items">
-          <router-link :to="item.link">{{ item.title }}</router-link>
+          <router-link :to="item.link"
+            ><div class="menu-item-title">
+              {{ item.title }}
+            </div></router-link
+          >
         </div>
       </div>
     </transition>
@@ -64,19 +68,19 @@ export default {
 }
 
 .sub-menu .menu-items {
-  padding-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .sub-menu .menu-items a {
   color: var(--light-text);
   text-decoration: none;
-  transition: 100ms;
+  transition: all 100ms ease;
 }
 
-.sub-menu a:hover {
-  color: var(--dark-text);
+.sub-menu .menu-items:hover {
+  background-color: #88530a;
   opacity: 85%;
-  border-bottom: 1px solid var(--light-background);
 }
 
 .fade-enter-active,

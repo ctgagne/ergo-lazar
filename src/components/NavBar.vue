@@ -118,18 +118,18 @@ export default {
     return {
       leistungen: [
         {
+          title: "Neurofeedback",
+          link: "/neurofeedback"
+        },
+        {
           title: "Pädiatrie",
           link: "/pädiatrie"
         },
-
         {
           title: "Gerontologie",
           link: "/gerontologie"
         },
-        {
-          title: "Neurofeedback",
-          link: "/neurofeedback"
-        },
+
         {
           title: "Psychologie",
           link: "/psychologie"
