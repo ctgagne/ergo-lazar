@@ -78,14 +78,13 @@ export default {
 }
 
 .sub-menu .menu-items a:hover {
-  color: var(--dark-text);
   text-decoration: none;
+  background-color: #88530a;
 }
 
-/* .sub-menu .menu-items:hover {
+.sub-menu .menu-items:hover {
   background-color: #88530a;
-  opacity: 85%;
-} */
+}
 
 .fade-enter-active,
 .fade-leave-active {
