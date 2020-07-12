@@ -78,7 +78,7 @@ export default {
   transition: all 100ms ease;
 }
 
-.sub-menu .menu-items:hover {
+.sub-menu .menu-items:focus {
   background-color: #88530a;
   opacity: 85%;
 }
