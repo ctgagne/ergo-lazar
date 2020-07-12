@@ -1,4 +1,4 @@
-# ergo-lazar2.0
+# Praxis für Ergotherapie Sophie Lazar
 
 ## Project setup
 ```
