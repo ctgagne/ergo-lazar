@@ -75,7 +75,6 @@ export default {
 .sub-menu .menu-items a {
   color: var(--light-text);
   text-decoration: none;
-  transition: all 100ms ease;
 }
 
 .sub-menu .menu-items:hover {
