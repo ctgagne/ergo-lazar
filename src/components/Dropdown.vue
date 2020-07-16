@@ -68,8 +68,11 @@ export default {
 }
 
 .sub-menu .menu-items {
-  padding: 5px;
   border-radius: 5px;
+}
+
+.menu-item-title {
+  padding: 5px;
 }
 
 .sub-menu .menu-items a {
