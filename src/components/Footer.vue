@@ -58,9 +58,11 @@ export default {};
 
 <style scoped>
 .footer-container {
-  margin: 2rem 1rem 0 1rem;
+  padding: 2rem 1rem 0 1rem;
+  padding-top: 1rem;
   color: var(--dark-text);
   font-family: "Oswald", sans-serif;
+  box-shadow: 0px -0.5px 7px rgba(0, 0, 0, 0.4);
 }
 .contact-info {
   display: flex;

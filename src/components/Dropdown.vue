@@ -79,11 +79,11 @@ export default {
 
 .sub-menu .menu-items a:hover {
   text-decoration: none;
-  background-color: #88530a;
+  background-color: #6e3b3b75;
 }
 
 .sub-menu .menu-items:hover {
-  background-color: #88530a;
+  background-color: #6e3b3b75;
 }
 
 .fade-enter-active,

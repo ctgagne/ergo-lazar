@@ -151,7 +151,7 @@ export default {
 #nav {
   display: flex;
   height: 3rem;
-  background-color: var(--light-text);
+  background-color: none;
   padding: 2rem 1rem;
   justify-content: space-between;
   align-items: center;
@@ -217,6 +217,7 @@ export default {
   text-align: right;
   font-family: "Merienda", cursive;
   font-weight: 700;
+  color: var(--dark-text);
 }
 
 .owner {

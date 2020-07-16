@@ -29,23 +29,28 @@ export default {
 
 :root {
   --light-text: #f4f5f4;
-  --dark-text: #2d3032;
-  --light-background: #ebb66d;
-  --dark-background: #2d3032;
+  --dark-text: #262941;
+  --light-background: #f3cf7a8c;
+  --dark-background: #252835;
   --primary-color: #c47910;
-  --component-color: #e2a68e;
+  --component-color: #a381968c;
 }
 
 body {
   margin: 0 auto;
   background-color: var(--light-text);
+  background-image: linear-gradient(
+    169deg,
+    var(--light-background) -40%,
+    var(--light-text) 65%,
+    var(--component-color) 95%
+  );
 }
 
 .main {
   margin: 0 auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  background-color: var(--light-background);
   color: var(--dark-text);
 }
 

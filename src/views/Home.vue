@@ -1,8 +1,12 @@
 <template>
   <div class="main">
     <div class="home">
-      <h1>IHRE ERGO-PRAXIS</h1>
-      <h2>Individuelle Therapie für maximale Erfolge</h2>
+      <div class="title">
+        <h1>
+          IHRE ERGO-PRAXIS
+        </h1>
+        <h2>Individuelle Therapie für maximale Erfolge</h2>
+      </div>
       <div class="card-grid">
         <router-link class="service-card" to="/neurofeedback">
           <div class="image-card">
@@ -88,26 +92,25 @@ export default {
   font-weight: 400;
   margin-top: 0;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1350px;
   color: var(--dark-text);
   font-family: "Open Sans", sans-serif;
-  border-bottom: 1px solid var(--dark-background);
 }
 
 .card-grid {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 1rem auto;
   justify-content: center;
 }
 
 .service-card {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 450px;
+  max-height: 350px;
   border-radius: 3%;
-  background-color: var(--light-background);
-  color: var(--primary-color);
+  background-color: none;
+  text-decoration: none;
   box-sizing: border-box;
   object-fit: cover;
   margin: 0.5rem;
@@ -116,7 +119,7 @@ export default {
 .image-card {
   border-radius: 3%;
   overflow: hidden;
-  max-height: 225px;
+  max-height: 250px;
 }
 
 .image-text {
@@ -153,12 +156,27 @@ export default {
 
 .service-card img {
   width: 100%;
-  max-height: 225px;
+  max-height: 250px;
   object-fit: cover;
   transition: transform 400ms ease-out;
 }
 
 .service-card img:hover {
   transform: scale(1.15);
+}
+
+@media (max-width: 460px) {
+  .image-card {
+    max-height: 200px;
+  }
+  .image-text h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .image-card {
+    max-height: 150px;
+  }
 }
 </style>
