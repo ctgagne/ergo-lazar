@@ -18,6 +18,7 @@ export default {
   }
 };
 </script>
+
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Merienda:wght@400;700&family=Passion+One:wght@400;700&display=swap");
@@ -47,6 +48,12 @@ body {
     var(--light-text) 65%,
     var(--component-color) 95%
   );
+}
+
+
+#app {
+  position: relative;
+  min-height: 100vh;
 }
 
 .main {

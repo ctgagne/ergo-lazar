@@ -69,6 +69,7 @@ export default {
   margin: 0 auto;
   justify-content: center;
   margin-bottom: 1rem;
+  padding-bottom: 325px;
 }
 
 h1 {

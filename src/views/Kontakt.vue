@@ -1,29 +1,31 @@
 <template>
   <div class="main">
-    <h1>Haben Sie Fragen?</h1>
-    <h2>
-      Wir beantworten gerne alle Ihre Fragen. Rufen Sie uns an oder benutzen Sie
-      unser Kontaktformular unten.
-    </h2>
-    <div class="kontakt-container">
-      <Contactform />
+    <div class="kontakt">
+      <h1>Haben Sie Fragen?</h1>
+      <h2>
+        Wir beantworten gerne alle Ihre Fragen. Rufen Sie uns an oder benutzen
+        Sie unser Kontaktformular unten.
+      </h2>
+      <div class="kontakt-container">
+        <Contactform />
 
-      <div class="map-container">
-        <h2>Unsere Lage</h2>
-        <div id="map">
-          <a
-            style="display:block;"
-            href="https://www.google.com/maps/search/?api=1&amp;channel=mws-visit&amp;hl=de-DE&amp;query=51.336212,12.401953"
-            target="_blank"
-          >
-            <img
-              id="map_image_5803997577"
-              style="margin:auto; max-width:100%;"
-              data-src="https://maps.googleapis.com/maps/api/staticmap?channel=mws-visit&amp;language=de_DE&amp;center=51.337750041652%2C12.401566453998&amp;zoom=15&amp;size=638x400&amp;maptype=roadmap&amp;client=gme-11internet&amp;markers=51.336212,12.401953&amp;signature=uHRfMVG7GJZ6RRI5PyFKd6zDduw="
-              src="https://maps.googleapis.com/maps/api/staticmap?channel=mws-visit&amp;language=de_DE&amp;center=51.337750041652%2C12.401566453998&amp;zoom=15&amp;size=638x400&amp;maptype=roadmap&amp;client=gme-11internet&amp;markers=51.336212,12.401953&amp;signature=uHRfMVG7GJZ6RRI5PyFKd6zDduw="
-              alt=""
-            />
-          </a>
+        <div class="map-container">
+          <h2>Unsere Lage</h2>
+          <div id="map">
+            <a
+              style="display:block;"
+              href="https://www.google.com/maps/search/?api=1&amp;channel=mws-visit&amp;hl=de-DE&amp;query=51.336212,12.401953"
+              target="_blank"
+            >
+              <img
+                id="map_image_5803997577"
+                style="margin:auto; max-width:100%;"
+                data-src="https://maps.googleapis.com/maps/api/staticmap?channel=mws-visit&amp;language=de_DE&amp;center=51.337750041652%2C12.401566453998&amp;zoom=15&amp;size=638x400&amp;maptype=roadmap&amp;client=gme-11internet&amp;markers=51.336212,12.401953&amp;signature=uHRfMVG7GJZ6RRI5PyFKd6zDduw="
+                src="https://maps.googleapis.com/maps/api/staticmap?channel=mws-visit&amp;language=de_DE&amp;center=51.337750041652%2C12.401566453998&amp;zoom=15&amp;size=638x400&amp;maptype=roadmap&amp;client=gme-11internet&amp;markers=51.336212,12.401953&amp;signature=uHRfMVG7GJZ6RRI5PyFKd6zDduw="
+                alt=""
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -35,12 +37,15 @@ import Contactform from "@/components/Contactform.vue";
 export default {
   name: "Kontakt",
   components: {
-    Contactform
-  }
+    Contactform,
+  },
 };
 </script>
 
 <style scoped>
+.kontakt {
+  padding-bottom: 325px;
+}
 .kontakt-container {
   display: flex;
   flex-direction: row;
@@ -90,13 +95,17 @@ h2 {
 }
 
 #map {
+  max-height: 400px;
+  background-color: var(--dark-background);
+}
+
+#map img {
   margin: 0 auto;
   max-height: 400px;
   width: 100%;
 }
 
-#map:hover {
-  opacity: 0.85;
-  background-color: var(--primary-color);
+#map img:hover {
+  opacity: 0.75;
 }
 </style>

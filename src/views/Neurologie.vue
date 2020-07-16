@@ -1,7 +1,9 @@
 <template>
   <div class="main">
-    <h1>Neurologie</h1>
-    <h2>Demnächst verfügbar</h2>
+    <div class="neurologie">
+      <h1>Neurologie</h1>
+      <h2>Demnächst verfügbar</h2>
+    </div>
     <!-- 
     <p>
       <strong>Als eine</strong> der ersten in Leipzig und Umgebung praktiziere
@@ -85,6 +87,16 @@
 <script></script>
 
 <style scoped>
+.neurologie {
+  padding-bottom: 325px;
+}
+
+@media (max-width: 900px) {
+  .neurologie {
+    padding-bottom: 100px;
+  }
+}
+
 .main p {
   font-family: "Open Sans", sans-serif;
   max-width: 1000px;

@@ -1,7 +1,9 @@
 <template>
   <div class="main">
-    <h1>Motorisch Funktionell</h1>
-    <h2>Demnächst verfügbar</h2>
+    <div class="motorisch">
+      <h1>Motorisch Funktionell</h1>
+      <h2>Demnächst verfügbar</h2>
+    </div>
     <!-- 
     <p>
       <strong>Als eine</strong> der ersten in Leipzig und Umgebung praktiziere
@@ -85,6 +87,16 @@
 <script></script>
 
 <style scoped>
+.motorisch {
+  padding-bottom: 325px;
+}
+
+@media (max-width: 900px) {
+  .motorisch {
+    padding-bottom: 100px;
+  }
+}
+
 .main p {
   font-family: "Open Sans", sans-serif;
   max-width: 1000px;

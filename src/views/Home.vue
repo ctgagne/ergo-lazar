@@ -79,6 +79,16 @@ export default {
 </script>
 
 <style scoped>
+.home {
+  padding-bottom: 325px;
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding-bottom: 100px;
+  }
+}
+
 .home h1 {
   margin-top: 0;
   margin-bottom: 0;

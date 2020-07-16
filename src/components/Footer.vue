@@ -58,7 +58,11 @@ export default {};
 
 <style scoped>
 .footer-container {
-  padding: 2rem 1rem 0 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 325px;
+  padding: 2rem auto;
   padding-top: 1rem;
   color: var(--dark-text);
   font-family: "Oswald", sans-serif;
@@ -104,7 +108,7 @@ svg:hover {
 }
 
 .bottom-footer p {
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   font-family: "Oswald", sans-serif;
 }
 
@@ -113,6 +117,9 @@ svg:hover {
 }
 
 @media (max-width: 900px) {
+  .footer-container {
+    padding-top: 0;
+  }
   .contact-info {
     display: none;
   }
