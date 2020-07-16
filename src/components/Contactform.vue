@@ -66,7 +66,7 @@ export default {};
   min-height: 575px;
   width: 670px;
   border-radius: 4px;
-  background-color: var(--primary-color);
+  background-color: var(--component-background);
   align-content: center;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;

@@ -34,6 +34,8 @@ export default {
   --dark-background: #252835;
   --primary-color: #c47910;
   --component-color: #a381968c;
+  --component-background: #c4791033;
+  --accent-dark: #6e3b3b;
 }
 
 body {

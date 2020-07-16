@@ -82,7 +82,7 @@ h1 {
 }
 
 h3 {
-  color: var(--dark-text);
+  color: var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -93,6 +93,7 @@ h3 {
 }
 
 h4 {
+  color: var(--accent-dark);
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
   margin: 1rem;
@@ -115,7 +116,7 @@ h5 {
   max-width: 800px;
   height: 95%;
   border-radius: 4px;
-  background-color: var(--primary-color);
+  background-color: var(--component-background);
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -125,6 +126,9 @@ h5 {
   min-height: 150px;
   width: 100%;
   border-radius: 50%;
+  -webkit-box-shadow: -9px 20px 31px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -9px 20px 31px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: -9px 20px 31px -6px rgba(0, 0, 0, 0.4);
 }
 
 .team-member-photo {

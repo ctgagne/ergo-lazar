@@ -43,9 +43,11 @@ export default {
 <style scoped>
 .kontakt-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
+  align-content: center;
 }
 
 h1 {
@@ -69,12 +71,12 @@ h2 {
 .map-container {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 1rem;
+  margin: 1rem 1rem;
   padding: 1rem 1rem;
   max-height: 575px;
-  max-width: 670px;
+  width: 670px;
   border-radius: 4px;
-  background-color: var(--primary-color);
+  background-color: var(--component-background);
   justify-content: center;
   align-content: center;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);

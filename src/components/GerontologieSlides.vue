@@ -70,7 +70,7 @@ export default {
 .gerontologie-card-grid button:active {
   flex-grow: 10;
   outline: none;
-  background: var(--light-background);
+  background: var(--component-color);
   margin: 0.5rem;
   border: 2px solid var(--dark-text);
   border-radius: 1rem;

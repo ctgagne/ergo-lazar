@@ -143,7 +143,7 @@ h2 {
   max-width: 1000px;
   box-sizing: border-box;
   border-radius: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--component-background);
 }
 
 .image-box {
