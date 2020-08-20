@@ -28,7 +28,7 @@
         <label for="phone-number">Phone Number</label>
         <input
           type="phone"
-          name="_replyto"
+          name="phone"
           id="phone-number"
           placeholder="(0XX) XXXX-XXXX"
           required=""
